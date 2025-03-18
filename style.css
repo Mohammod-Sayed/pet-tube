@@ -1,0 +1,42 @@
+.view-btn{
+    background-color: #0E7A81;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+}
+.view-btn:hover{
+    background-color: #0E7A81;
+    opacity: 0.8;
+    color: white;
+}
+.categorie-btn{
+    transition: 0.3s;
+}
+.categorie-btn:hover{
+    border-radius: 50px;
+    background-color: #E7F2F2;
+    border-color: #0E7A81 !important;
+}
+.card-btn{
+    border-color: #E7F2F2 !important;
+    color: #0E7A81;
+}
+.card-btn:hover{
+    background-color: #0E7A81;
+    color: white;
+}
+.card-text{
+    color: gray;
+}
+.footer-link{
+    font-weight: 4px;
+    color: #A1A1A1;
+    text-decoration: none;
+    transition: 2s;
+}
+.footer-link:hover{
+    transform: scale(1.1);
+}
+.phone-no:hover{
+    text-decoration: underline;
+}
