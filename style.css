@@ -1,3 +1,45 @@
+.loading {
+    display: none; /* Hide it initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.loading-bar{
+    width: 10px;
+    height: 40px;
+    margin: 0 3px;
+    background-color: #333;
+    animation: loading 1.5s;
+    animation-iteration-count: 2;
+}
+.loading-bar:nth-child(1){
+    animation-delay: 0s;
+}
+.loading-bar:nth-child(2){
+    animation-delay: 0.1s;
+}
+.loading-bar:nth-child(3){
+    animation-delay: 0.2s;
+}
+.loading-bar:nth-child(4){
+    animation-delay: 0.3s;
+}
+@keyframes loading {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1, 2.5);
+    }
+}
+
 .view-btn{
     background-color: #0E7A81;
     border-radius: 10px;
@@ -32,11 +74,19 @@
     font-weight: 4px;
     color: #A1A1A1;
     text-decoration: none;
-    transition: 2s;
+    transition: 0.5s;
 }
 .footer-link:hover{
     transform: scale(1.1);
 }
 .phone-no:hover{
     text-decoration: underline;
+}
+
+.preloader{
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
